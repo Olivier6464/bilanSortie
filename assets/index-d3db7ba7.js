@@ -14,6 +14,7 @@ Au niveau de l'autonomie dans les déplacements ${r} ${u}, son périmètre de ma
     <option value="est autonome">est autonome</option>
       <option value="a besoin d'une personne">a besoin d'une personne</option>
       <option value="a besoin d'une barrière">a besoin d'une barrière</option>
+      <option value="a besoin d'une potence">a besoin d'une potence</option>  
     </select>
     <label>pour les transferts de type</label><br>
     <select multiple id="transferts">
