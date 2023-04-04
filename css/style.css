@@ -1,0 +1,86 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme:  dark;
+  color: rgba(244, 234, 234, 0.953);
+
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 2rem;
+  color: rgba(244, 234, 234, 0.953);
+  background-color: #242424;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea,
+select,
+label {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  color: #ADFBBB;
+  margin-top: 0;
+}
+
+ul {
+  color: #888;
+}
+
+.card {
+  padding: 2em;
+}
+
+#genere {
+  background-color: hsla(0, 0%, 76%, 0.609);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: #2825e8;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.barre {
+  display:block;
+}
+
+
