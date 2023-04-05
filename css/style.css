@@ -1,5 +1,4 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -39,6 +38,7 @@ input,
 textarea,
 select,
 label {
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
 }
 
