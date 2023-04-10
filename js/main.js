@@ -35,6 +35,12 @@ La douleur est estimée à ${douleur}.
 Au niveau de l'autonomie dans les déplacements ${patient} ${autonomie}, son périmètre de marche est d'environ ${distance}
     `;
 
+    if (document.querySelector('h1').innerText=="Bilan intermédiaire"){
+        bilanText = `======  Bilan intermédiaire  ====== 
+        
+${bilanText}`; 
+    }
+
     // ====================== SORTIE DU TEXT =======================
 
     document.querySelector("#output").innerHTML = bilanText;
