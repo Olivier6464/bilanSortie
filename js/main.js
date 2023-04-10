@@ -10,10 +10,10 @@ function makeReport(e) {
     let pronom = "";
     if (civilite == "Madame") {
         patient = "la patiente";
-        pronom = "elle";
+        pronom = "Elle";
     } else {
         patient = "le patient";
-        pronom = "il"
+        pronom = "Il"
     }
     let transferts = getSelectionsListe("#transferts");
 
@@ -29,13 +29,15 @@ function makeReport(e) {
         douleur = `${douleur} EVS ${location}`;
     }
 
+    let bilanText = `${civilite} ${nom} a bénéficié de séances de rééducation.
+${pronom} ${abesoin} 
+La douleur est estimée à ${douleur}.
+Au niveau de l'autonomie dans les déplacements ${patient} ${autonomie}, son périmètre de marche est d'environ ${distance}
+    `;
+
     // ====================== SORTIE DU TEXT =======================
 
-    document.querySelector("#output").innerHTML = `${civilite} ${nom} a bénéficié de séances de rééducation,
-${pronom} ${abesoin} 
-la douleur est estimée à ${douleur}.
-Au niveau de l'autonomie dans les déplacements ${patient} ${autonomie}, son périmètre de marche est d'environ ${distance}
-`;
+    document.querySelector("#output").innerHTML = bilanText;
 };
 
 document.querySelector("#genere").addEventListener("click", makeReport
